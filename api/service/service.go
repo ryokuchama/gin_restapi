@@ -6,6 +6,8 @@ import (
 	"github.com/gin_restapi/api/entity"
 )
 
+// データベース処理
+
 type Service struct{}
 
 type menu entity.menu
