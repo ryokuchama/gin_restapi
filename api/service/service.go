@@ -2,8 +2,8 @@ package service
 
 import (
 	"github.com/gin-gonic/gin"
-	"./database"
-	"./entity"
+	"github.com/gin_restapi/api/database"
+	"github.com/gin_restapi/api/entity"
 )
 
 type Service struct{}
@@ -39,6 +39,30 @@ func (s Service) CreateModel(c *gin.context) (menu, error) {
 }
 
 // メニュー更新
-func (s Service) UpdateByID(id int, c *gin.Context) (menu, error) {
+func (s Service) UpdateByID(id string, c *gin.Context) (menu, error) {
+	db := db.GetDB()
+	var m menu
 
+	if err := db.Where("id = ?", id).First(&m).Error; err != nil {
+		return m, err
+	}
+	if err := c.BindJSON(&m); err != nil {
+		return m, err
+	}
+
+	db.Save(&m)
+
+	return m, nil
+}
+
+// メニュー削除
+func (s Service) DeleteByID(id string) error {
+	db := db.GetDB()
+	var m menu
+
+	if err := db.Where("id = ?", id).Delete(&m).Error; err != nil {
+		return err
+	}
+
+	return nil
 }
