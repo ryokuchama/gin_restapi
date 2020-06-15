@@ -3,7 +3,7 @@ package database
 import (
 	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/service_backend/restapi/entity"
+	"github.com/ryokuchama/gin_restapi/entity"
 )
 
 var (
@@ -14,7 +14,7 @@ var (
 func Init() {
 	db, err = gorm.Open(
 		"mysql",
-	"host=0.0.0.0 port=5432 user=gorm dbname=gorm password=gorm sslmode=disable")
+	"host=0.0.0.0 port=3030 user=gorm dbname=menu password=gorm sslmode=disable")
 	if err != nil {
 		panic(err)
 	}

@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/gin_restapi/api/database"
-	"github.com/gin_reatapi/api/server"
+	"github.com/ryokuchama/gin_restapi/database"
+	"github.com/ryokuchama/gin_reatapi/server"
 )
 
 func main() {
-	db.Init()
+	database.Init()
+	server.Init()
 }
