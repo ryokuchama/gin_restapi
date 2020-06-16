@@ -3,7 +3,7 @@ package controller
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-    "github.com/ryokuchama/gin_restapi/service"
+    "github.com/ryokuchama/api/service"
 )
 
 // コントローラー処理
