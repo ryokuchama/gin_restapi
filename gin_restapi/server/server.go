@@ -2,7 +2,7 @@ package server
 
 import (
 	"github.com/gin-gonic/gin"
-    "github.com/ryokuchama/gin_restapi/api/controller"
+    "github.com/ryokuchama/gin_restapi/controller"
 )
 
 //初期化

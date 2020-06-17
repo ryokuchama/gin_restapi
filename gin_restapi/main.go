@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/ryokuchama/gin_restapi/api/database"
-	"github.com/ryokuchama/gin_restapi/api/server"
+	"github.com/ryokuchama/gin_restapi/database"
+	"github.com/ryokuchama/gin_restapi/server"
 )
 
 // エントリポイント
