@@ -6,12 +6,12 @@ import (
 )
 
 //初期化
-
 func Init() {
 	r := router()
 	r.RUN()
 }
 
+// webサーバ起動とルーティング
 func router() *gin.Engine {
 	r := gin.Default()
 

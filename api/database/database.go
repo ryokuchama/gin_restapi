@@ -6,6 +6,8 @@ import (
 	"github.com/ryokuchama/gin_restapi/api/entity"
 )
 
+// データベースへの接続とクエリ
+
 var (
 	db *gorm.DB
 	err error
