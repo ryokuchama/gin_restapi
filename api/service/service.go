@@ -2,8 +2,8 @@ package service
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ryokuchama/gin_restapi/database"
-	"github.com/ryokuchama/gin_restapi/entity"
+	"github.com/ryokuchama/gin_restapi/api/database"
+	"github.com/ryokuchama/gin_restapi/api/entity"
 )
 
 // データベース処理

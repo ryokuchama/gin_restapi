@@ -3,7 +3,7 @@ package database
 import (
 	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/ryokuchama/gin_restapi/entity"
+	"github.com/ryokuchama/gin_restapi/api/entity"
 )
 
 // データベースへの接続とクエリ
