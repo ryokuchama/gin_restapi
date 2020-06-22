@@ -7,7 +7,6 @@ import (
 )
 
 // データベース処理
-
 type Service struct{}
 
 type menu entity.menu
