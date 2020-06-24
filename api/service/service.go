@@ -28,6 +28,8 @@ func (s Service) CreateModel(c *gin.context) (menu, error) {
 	db := db.GetDB()
 	var m menu
 
+	maxid := GetMaxID()
+
 	if err := c.BindJSON(&m).Error; err != nil {
 		return m, err
 	}
