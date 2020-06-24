@@ -67,8 +67,3 @@ func (pc Controller) Delete(c *gin.Context) {
 		c.JSON(204, gin.H{"id #" + id: "deleted"})
 	}
 }
-
-// IDの最大値を取得
-func (pc Controller) GetMaxID(c *gin.Context) {
-	
-}

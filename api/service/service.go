@@ -67,3 +67,13 @@ func (s Service) DeleteByID(id string) error {
 
 	return nil
 }
+
+// IDの最大値を取得
+func GetMaxID(id int) {
+	db := db.GetDB()
+	
+	if err := db.Select("max(ID)").Error; err != nil {
+		return err
+	}
+	return nil
+}
